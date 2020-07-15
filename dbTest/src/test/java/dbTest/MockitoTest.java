@@ -18,9 +18,13 @@ public class MockitoTest  {
 
     @Test
     void setMockOutput() {
-    
+     when(service1.buy(null, 0, 0)).thenReturn("IBM");
        
     }
-    
+     @Test
+    void setMockOutput() {
+     when(service1.buy("IBM", 56, 10)).thenReturn("IBM");
+       
+    }
     
 }
